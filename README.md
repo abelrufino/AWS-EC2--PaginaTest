@@ -1,8 +1,43 @@
 # AWS-EC2--PaginaTest
 Iniciar sua instância do EC2 
 
-Esse script faz o deploy automático do seu site quando a instância EC2 é iniciada. Ele instala o Apache, clona o repositório e exibe a página diretamente no navegador via IP público da instância.
 
+#  AWS EC2 Test Page
+
+Este projeto é uma **Página de Teste Para Instâncias Amazon EC2**.
+
+---
+
+## 🚀 Sobre o Projeto 🚀
+Esta página demonstra:
+- Como detectar automaticamente a **Região** e a **Zona de Disponibilidade** (AZ) de uma instância EC2;
+- Uma **interface moderna** feita com **Tailwind CSS e AOS**;
+- Um **rodapé com créditos e LinkedIn** do criador.
+
+---
+
+##  Tecnologias Usadas
+- HTML5  
+- Tailwind CSS  
+- AOS (Animate On Scroll)  
+- Phosphor Icons  
+- JavaScript  
+- AWS EC2 Metadata API (IMDSv2)
+
+---
+
+## 🖥️ Execução Local
+1. Baixe ou clone este repositório.
+2. Abra o arquivo `index.html` em um navegador.
+3. (Opcional) Se estiver em uma instância **EC2**, a página exibirá automaticamente a **Região e AZ**.
+
+---
+User Data - Deploy Automático da Página
+
+ Esse script faz o deploy automático do seu site quando a instância EC2 é iniciada.
+Ele instala o Apache, clona o repositório e exibe a página diretamente no navegador via IP público da instância.
+
+```
 #!/bin/bash
 # Update packages
 sudo yum update -y
@@ -36,3 +71,18 @@ sudo sed -i "s/<span id=\"az\" class=\"font-semibold text-cyan-300\">Detecting..
 # Permissions
 sudo chown -R apache:apache /var/www/html
 sudo systemctl restart httpd
+```
+
+##  Autor
+**Abel Neto**  
+© 2025 - Amanzon AWS  
+🔗 [LinkedIn](https://www.linkedin.com/in/abel-joão-rufino-neto-9a2a1b49/)
+
+
+
+
+
+
+
+
+
