@@ -1,9 +1,5 @@
 # AWS-EC2--PaginaTest
 Iniciar sua instância do EC2 
-
-
-#  AWS EC2 Test Page
-
 Este projeto é uma **Página de Teste Para Instâncias Amazon EC2**.
 
 ---
